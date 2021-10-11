@@ -1,0 +1,65 @@
+api:
+  invalid_resource:
+    code: '1'
+    status: '400'
+    title: 'Bad Request'
+  invalid_current_shop:
+    code: '3'
+    status: '401'
+    title: 'Unauthorized'
+  invalid_location:
+    code: '7'
+    status: '401'
+    title: 'Unauthorized'
+    details: 'No location provided'
+  invalid_postcode:
+    code: '9'
+    status: '404'
+    title: 'Invalid Postcode'
+    details: 'The given postcode cannot be found'
+  invalid_data_format:
+    code: '4'
+    status: '422'
+    title: 'Unprocessable Entity'
+  db_transaction_failed:
+    code: '5'
+    status: '409'
+    title: 'Conflict (DB errors)'
+  not_found:
+    code: '6'
+    status: '404'
+    title: 'Not Found'
+    details: 'No resource was found for search criteria.'
+  server_error:
+    code: '8'
+    status: '500'
+    title: 'Server Error'
+  email_required:
+    code: '10'
+    status: '400'
+    title: 'Bad Request'
+  unavailable_location:
+    code: '11'
+    status: '401'
+    title: 'Unavailable location'
+    details: 'Service not available in the specified location'
+  create_order_action:
+    code: '12'
+    status: '200'
+    title: 'Errors in create order'
+  no_postcode_provided:
+    code: '13'
+    status: '200'
+    title: 'Location not provided'
+    details: ["Please, provide a postcode to proceed"]
+  postcode_not_found:
+    code: '14'
+    status: '200'
+    title: 'Postcode not found'
+    details: ["Please, enter a valid postcode to continue"]
+  
+not_found:
+  code: '2'
+  status: '404'
+  title: 'Not Found'
+  details: 'Resource not found.'

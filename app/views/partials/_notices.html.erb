@@ -1,0 +1,18 @@
+<% if notice.present? || alert.present? %>
+  <div class="w-100 px-0">
+    <div class="container"><div class="row"><div class="col-12 px-0">
+      <% if notice.present? %>
+        <div class="alert alert-success my-4 alert-dismissible">
+          <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+          <%= notice.html_safe %>
+        </div>
+      <% end %>
+      <% if alert.present? %>
+        <div class="alert alert-danger my-4 alert-dismissible">
+          <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+          <%= alert.html_safe %>
+        </div>
+      <% end %>
+    </div></div></div>
+  </div>
+<% end %>

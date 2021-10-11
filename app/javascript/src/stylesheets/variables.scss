@@ -1,0 +1,47 @@
+//colors
+$std-blue: #1E7DCD;
+$std-grey: #797979;
+$dark-grey: #555;
+$hp-grey: #E5E5E5;
+$light-grey: #f4f4f4;
+$black: #000;
+$white: #fff;
+$yellow: #fcd74b;
+$purple: #2f2c46;
+$green: #43B82A;
+$red-alert: #c70000; 
+$dark: #343a40;
+
+$pretty--color-primary: $dark;
+
+$eshelf-colors:(
+  "green": $green,
+  "yellow" :$yellow,
+  "purple" :$purple,
+  "hp-grey" :$hp-grey,
+  "light-grey" :$light-grey,
+  "std-blue": $std-blue,
+  "std-grey" :$std-grey,
+  "dark-grey" :$dark-grey,
+  "black": $black,
+  "white" :$white,
+  "red-alert" :$red-alert,
+);
+
+$colors: map-merge($colors, $eshelf-colors);
+$theme-colors: map-merge($theme-colors, $eshelf-colors);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1280px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1220px
+);

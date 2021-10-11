@@ -1,0 +1,30 @@
+.shared-links {
+  a {
+    color: $dark-grey;
+    &:hover {
+      color: #000;
+    }
+  }
+}
+
+.devise-headaer {
+  font-size: 2rem;
+  border-bottom: solid 1px $hp-grey; 
+
+  @include media-breakpoint-down(sm) {
+    font-size: 1.5rem;
+  }
+
+  .devise-active {
+    border-bottom: solid 4px $std-blue;
+    a {
+      color: #000;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    font-weight: 500;
+    color: $hp-grey;
+  }
+}

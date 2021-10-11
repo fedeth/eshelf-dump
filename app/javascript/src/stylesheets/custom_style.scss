@@ -1,0 +1,102 @@
+// Type here custom scss
+
+.grecaptcha-badge { 
+	visibility: hidden;
+}
+
+body {
+	font-family: "Roboto";
+	font-weight: 400;
+}
+
+// Check if still necessary
+body.modal-open {
+	padding-right: 0 !important;
+	overflow: auto;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+h1, h2, h3,  
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: "FiraSans";
+	font-weight: 500;
+}
+
+h4, h5, h6,
+.h4, .h5, .h6 {
+	font-family: "Roboto";
+	font-weight: 500;
+}
+
+.font-sm {
+	font-size: 14px;
+}
+
+.font-xs {
+	font-size: 12px;
+}
+
+.font-md {
+	font-size: 1.25rem;
+}
+
+.bold-text {
+	font-weight: bold;
+}
+
+.underline-text {
+	text-decoration: underline;
+}
+
+.fill-wrapper {
+	position: absolute;
+	top:0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.bg-contain-center, .bg-cover-center {
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.bg-contain-center {
+	background-size: contain;
+}
+
+.bg-cover-center {
+	background-size: cover;
+}
+
+.box-shadow {
+	box-shadow: 5px 0 10px 1px #ddd;
+}
+
+.footer-text {
+	font-size: 1.15rem;
+	@include media-breakpoint-down(sm) {
+		font-size: 1rem;
+	}
+}
+
+.cursor-pointer {
+	cursor: pointer !important;
+}
+
+.z-index-3 {
+	z-index: 3;
+}
+
+.modal-content {
+	border-radius: 0;
+}
+

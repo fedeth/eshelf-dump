@@ -1,0 +1,42 @@
+require("@rails/ujs").start()
+require("@rails/activestorage").start()
+require("channels")
+
+import 'animate.css/animate.css'
+import 'bootstrap'
+import '../src/stylesheets/application.scss'
+import 'flickity/css/flickity.css'
+import '@fortawesome/fontawesome-free/css/all.css';
+import JQuery from 'jquery';
+window.$ = window.JQuery = JQuery;
+
+import { ApplicationModule } from 'src/modules/application_module.js'
+window.ApplicationModule = ApplicationModule
+
+import { ViewportMixin } from 'src/modules/viewport_mixin.js'
+window.ViewportMixin = ViewportMixin;
+
+import { recaptchaV3Mixin } from 'src/modules/recaptcha_v3_module.js'
+window.recaptchaV3Mixin = recaptchaV3Mixin;
+
+import { applicationMixin } from 'src/modules/application_mixin.js'
+window.applicationMixin = applicationMixin
+
+import Vue from 'vue/dist/vue.esm.js'
+<% if ENV["RAILS_ENV"] == "production" %>
+  Vue.config.devtools = false
+  Vue.config.debug = false
+  Vue.config.silent = true
+<% else %>
+  Vue.config.devtools = true
+<% end %>
+
+import VueSlider from 'vue-slider-component'
+import 'vue-slider-component/theme/default.css'
+
+window.Vue = Vue
+Vue.component('VueSlider', VueSlider)
+
+<% include WebpackHelper %>
+<%= get_vue_components_registration() %>
+
