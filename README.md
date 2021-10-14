@@ -1,6 +1,6 @@
 # README
 
-This is a old dump of the dead startup eShelf. It could be helpful to scaffold new apps based on the same stack and features:  
+This is an old dump of the dead startup eShelf. It could be helpful to scaffold new apps based on the same stack and features:  
 - RoR
 - Pure Vue injected compoents
 - Devise gem based on multy entities auth system
